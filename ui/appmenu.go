@@ -23,7 +23,8 @@ func (i *AppmenuItem) render(isSelected bool, isAnySubmenuOpen bool) string {
 	if isSelected {
 		if isAnySubmenuOpen {
 			style = style.
-				Background(DarkGray)
+			Background(DarkGray).
+				Foreground(Black)
 		} else {
 			style = style.
 				Background(Primary).

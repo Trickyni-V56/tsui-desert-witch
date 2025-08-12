@@ -83,7 +83,7 @@ func (item *LabeledSubmenuItem) render(isSelected bool, isSubmenuOpen bool) stri
 					Foreground(Black)
 			} else {
 				colorStyle = colorStyle.
-					Background(Secondary).
+					Background(Primary).
 					Foreground(Black)
 			}
 		} else if item.IsDim {
@@ -157,7 +157,7 @@ func (item *ToggleableSubmenuItem) render(isSelected bool, isSubmenuOpen bool) s
 
 		if isSelected {
 			colorStyle = colorStyle.
-				Background(Secondary).
+				Background(Primary).
 				Foreground(Black)
 		} else if item.IsDim {
 			colorStyle = colorStyle.
@@ -270,7 +270,7 @@ func (item *SettingSubmenuItem) render(isSelected bool, isSubmenuOpen bool) stri
 	if isSubmenuOpen {
 		if isSelected {
 			style = style.
-				Background(Secondary).
+				Background(Primary).
 				Foreground(Black)
 
 			selectedLabelStyle = selectedLabelStyle.
